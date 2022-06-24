@@ -1,0 +1,505 @@
+// import
+@import "_mixins.scss";
+
+// /* font import*/
+@import url('http://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css');
+// @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+// @font-face {
+//   font-family: 'Trajan Pro';
+//   src: 
+//   local('Trajan Pro'),
+//   local('Trajan Pro-Bold'),
+//   url('/css/fonts/Trajan-Pro.woff') format('woff'),
+//   url('/css/fonts/Trajan Pro.ttf') format('truetype');
+// }
+
+input, button{
+  font-size: 100%;
+}
+.fwl, .fw300{
+  font-weight: 300;
+  // font-family: "NEXON Lv1 Gothic OTF Light";
+}
+.fwb, .fw700, strong, .bold{
+  font-weight: 700;
+  // font-family: "NEXON Lv1 Gothic OTF Bold";
+}
+
+html, body, input{
+  // font-family: "NEXON Lv1 Gothic OTF", sans-serif;
+  font-family: "Spoqa Han Sans Neo", "Noto Serif KR", serif;
+}
+body, input{
+  font-size: 16rem;
+}
+.ff-2nd{
+  font-family: 'Spoqa Han Sans Neo';
+}
+//text-style
+.h1{
+  font-size: 60rem;
+}
+.h2{
+  font-size: 32rem;
+  // letter-spacing: -0.02em;
+  font-weight: 200;
+  line-height: 1.15;
+  &.en{
+    font-size: 50rem;
+    font-weight: 400;
+  }
+}
+.h3{
+  font-size: 32rem;
+  letter-spacing: -0.04em;
+  line-height: 1.15;
+  &.en{
+    font-size: 30rem;
+    letter-spacing: -0.02em;
+    font-weight: 400;
+  }
+}
+.h4{
+  font-size: 22rem;
+  letter-spacing: -0.04em;
+  line-height: 2;
+}
+.p1{
+  font-size: 17rem;
+}
+.p2{
+  font-size: 21rem;
+  line-height: 1.8;
+}
+.fz70{
+  font-size: 70rem;
+  line-height: 90rem;
+}
+
+.en{
+  // font-family: 'Trajan Pro' !important;
+}
+//color-style
+:root {
+  --pri-01: #6C1F7E;
+  --pri-01-o2 : rgba(146, 122, 78, 0.2);
+  --pri-02: #6C1F7E;
+  --pri-03: #6C1F7E;
+  --pri-04: #554B38;
+  --pri-05: #00ffff;
+  --sub-01: #F0EDE8;
+  --sub-02: #7E796F;
+  --sub-03: #817C75;
+  --sub-04: #FEF7EF;
+  --sub-05: #7A6A56;
+  --sub-06: #A6936F;
+  --bg-01:#eee;
+  --bg-02:#ccc;
+  --bg-03:#ddd;
+  --bg-04:#999;
+  --bg-05:#777;
+  --gra-01: linear-gradient(to right, var(--pri-01), #3F332B);
+  --gra-02: linear-gradient(to right, #077, #fff);
+  --gra-03: linear-gradient(to right, #007, #fff);
+  --gra-04: linear-gradient(to right, #080, #fff);
+  --white: #fff;
+  --black: #232323;
+  --black-02: #0E0705;
+  --black-o5:rgba(51, 51, 51, 0.5);
+}
+:root {
+  --main-beige: #C09B64;
+  --font-white: #faf7f2;
+  --font-brown: #362e2e;
+  --deep-brown: #4e402a;
+  --bg-green: #C7CEBE;
+  --footer-bg: #362e2e;
+}
+
+
+@for $i from 1 to 11 {
+  .pri-0#{$i}{
+    color:var(--pri-0#{$i});
+  }
+  .bg_pri-0#{$i}{
+    background-color:var(--pri-0#{$i});
+  }
+  .sub-0#{$i}{
+    color:var(--sub-0#{$i});
+  }
+  .bg_sub-0#{$i}{
+    background-color:var(--sub-0#{$i});
+  }
+  .bg_gra-0#{$i}{
+    background-color:var(--gra-0#{$i});
+  }
+}
+.white{
+  color:var(--white);
+}
+.black{
+  color:var(--black);
+}
+.black-05{
+  color:var(--black-o5);
+}
+
+// 선택 색상
+::selection {
+  // background: var(--pri-01);
+  background: #FFD69B;
+  // color: #fff;
+  color: #000;
+}
+.highlight {
+  box-shadow: inset 0 -8rem 0 rgba(156, 158, 57, 0.2);
+}
+// 스크롤 색상
+* {
+  /* width */
+  &::-webkit-scrollbar {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  /* Track */
+  &::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 1rem var(--sub-01);
+    border-radius: 10rem;
+  }
+
+  /* Handle */
+  &::-webkit-scrollbar-thumb {
+    background: var(--pri-01);
+    border-radius: 10rem;
+  }
+}
+
+@for $i from 10 to 50 {
+  .fz#{$i}{
+    font-size: #{$i}rem;
+  }
+}
+.fw200 {
+  font-weight: 200;
+}
+.fw300 {
+  font-weight: 300;
+}
+.fw400 {
+  font-weight: normal;
+}
+.fw500 {
+  font-weight: 500;
+}
+.fw700, .bold, strong {
+  // font-weight: bold;
+}
+a:focus {
+  outline: 0;
+}
+.flex{
+  display: flex;
+  &.mo-col{
+    @include mq(mobile){
+      flex-direction: column;
+    }
+  }
+  &.wrap{
+    flex-wrap: wrap;
+  }
+  &.ror{
+    flex-direction: row-reverse;
+  }
+  &.jcsb{
+    justify-content: space-between;
+  }
+}
+.grid{
+  display: grid;
+  &.mo-col1{
+    @include mq(mobile){
+      grid-template-columns: 1fr;
+    }
+  }
+  &.mo-col2{
+    @include mq(mobile){
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+.pcc{
+  place-content: center;
+}
+.pic{
+  place-items: center;
+}
+.jic{
+  justify-items: center;
+}
+.jcc{
+  justify-content: center;
+}
+.jce {
+  justify-content: flex-end;
+}
+.aic{
+  align-items: center;
+}
+.acc{
+  align-content: center;
+}
+.jcsb{
+  justify-content: space-between;
+}
+.jcse{
+  justify-content: space-evenly;
+}
+.dib{
+  display: inline-block;
+}
+.db{
+  display: block;
+}
+.di{
+  display: inline;
+}
+@for $i from 2 to 13 {
+  .gtc-#{$i} {
+    grid-template-columns: repeat(#{$i}, 1fr);
+  }
+}
+
+.container-960 {
+  @include container(960rem, 90%);
+}
+.container-1000 {
+  @include container(1000rem, 90%);
+}
+.container-1100 {
+  @include container(1100rem, 90%);
+}
+.container-1200 {
+  @include container(1200rem, 90%);
+}
+.container-1280 {
+  @include container(1280rem, 90%);
+}
+.container-1300 {
+  @include container(1300rem, 90%);
+}
+.container-1320 {
+  @include container(1300rem, 90%);
+}
+.container-1380 {
+  @include container(1380rem, 90%);
+}
+.container, .container-1400 { //기본 컨테이너 
+  @include container(1400rem, 90%);
+}
+.container-1440 {
+  @include container(1400rem, 90%);
+}
+.container-1920 {
+  @include container(100%, 1920rem);
+}
+.container-full {
+  @include container(100%,100%);
+}
+span,
+div,
+p {
+  word-break: keep-all;
+  line-height: 1.6;
+}
+p {
+  line-height: 1.88;
+}
+// 미디어별 폰트 크기
+// 미디어별 폰트크기 수정
+html {
+  font-size: 6.25%;
+  // @include mq(lg) {
+  //   font-size: 0.05254860746190225vw;
+  // }
+  @include mq(tablet) {
+    font-size: 0.0724636vw;
+  }
+  @include mq(mobile) {
+    font-size: 0.2vw;
+  }
+}
+html{
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+html,
+body {
+  word-break: keep-all;
+  &.lock {
+    @include mq(mobile) {
+      overflow: hidden;
+    }
+  }
+}
+body{
+  overflow-x: clip;
+}
+input {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+section {
+  &:last-of-type {
+    // margin-bottom: 50rem;
+  }
+}
+section > .title_text {
+  font-size: 44rem;
+  text-align: center;
+}
+.tal {
+  text-align: left !important;
+}
+.tac {
+  text-align: center !important;
+}
+.tar {
+  text-align: right !important;
+}
+.lh1 {
+  line-height: 1;
+}
+.lh12 {
+  line-height: 1.2;
+}
+.lh14 {
+  line-height: 1.4;
+}
+.lh16 {
+  line-height: 1.6;
+}
+.lh17 {
+  line-height: 1.7;
+}
+.lh18 {
+  line-height: 1.8;
+}
+.lh2 {
+  line-height: 2;
+}
+@for $i from 0 to 11 {
+  .gap#{$i}0{
+    gap: #{$i}0rem;
+  }
+  .pt#{$i}0{
+    padding-top: #{$i}0rem;
+  }
+  .pb#{$i}0{
+    padding-bottom: #{$i}0rem;
+  }
+  .mt#{$i}0{
+    margin-top: #{$i}0rem;
+  }
+  .mb#{$i}0{
+    margin-bottom: #{$i}0rem;
+  }
+  .mt-#{$i}0{
+    margin-top: -#{$i}0rem;
+  }
+  .mb-#{$i}0{
+    margin-bottom: -#{$i}0rem;
+  }
+}
+
+
+// 미디어별 VISIBLE & HIDDEN
+.visible-xs {
+  display: none;
+  @include mq(mobile) {
+    display: block !important;
+  }
+}
+.hidden-xs {
+  display: inherit;
+  @include mq(mobile) {
+    display: none !important;
+  }
+}
+.visible-tb{
+  display: none;
+  @include mq(tablet) {
+    display: block !important;
+  }
+}
+.hidden-tb{
+  display: inherit;
+  @include mq(tablet) {
+    display: none !important;
+  }
+}
+.hidden{
+  display: none !important;
+}
+.blind{
+  display: block;
+  clip: rect(0,0,0,0);
+  overflow: hidden;
+  width: 0;
+  height: 0;
+}
+.img_wrap{
+  user-select: none;
+  font-size: 0;
+  &.contain{
+    img{
+      object-fit: contain;
+    }
+  }
+  img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+.upc{
+  text-transform: uppercase;
+}
+.hr{
+  height: 1px;
+  width: 100%;
+  background-color: var(--black);
+}
+.nowrap{
+  white-space: nowrap;
+}
+.pos-r{
+  position: relative;
+}
+.pos-center{
+  position: absolute;
+  top: 50%;left: 50%;
+  transform: translate(-50%, -50%);
+}
+.ov-h{
+  overflow: hidden;
+}
+.ov-v{
+  overflow: visible;
+}
+.ovxs{
+  overflow-x: scroll;
+}
+.ovys{
+  overflow-y: scroll;
+}
+
+// 모바일 팝업 위치 강제 변경
+@media (max-width : 768px){
+#hd_pop{width:100% !important;}
+.hd_pops{width:100% !important;left: 0 !important;top: 50px !important;}
+.hd_pops img {width:100% !important;}
+.hd_pops_con {width:100% !important;height:auto !important; line-height: 0.6 !important;}
+}

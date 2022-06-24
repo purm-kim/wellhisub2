@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="/js/main.js"></script>
+  <script src="/js/menu.js"></script>
+  <script src="/js/scrollSpeed.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="/css/basic.css">
+  <link rel="stylesheet" href="/css/custom.css">
+  <link rel="stylesheet" href="/css/common.css">
+  <link rel="stylesheet" href="/css/style.css">
+  <title>sub test page</title>
+</head>
+<body>
+
+  <!-- HEADER S -->
+  <div class="header">
+    <div class="container-1440 flex jcsb aic">
+      <a href="/" class="logo_wrap">
+        <span class="blind">웰하이여성아동병원</span>
+      </a>
+      <nav class="nav">
+        <ul class="depth01">
+          <li>
+            <a href="#" class="unlink-mo" data-link="">웰하이클리닉
+              <span class="icon_wrap visible-xs">
+                <img src="/img/common/close_one.svg" alt="" class="close_one">
+                <img src="/img/common/open_one.svg" alt="" class="open_one">
+              </span>
+            </a>
+            <ul class="depth02">
+              <!-- <li><a href="">추나요법</a></li> -->
+            </ul>
+          </li>
+          <li>
+            <a href="#" class="unlink-mo" data-link="">하이푸클리닉
+              <span class="icon_wrap visible-xs">
+                <img src="/img/common/close_one.svg" alt="" class="close_one">
+                <img src="/img/common/open_one.svg" alt="" class="open_one">
+              </span>
+            </a>
+            <ul class="depth02">
+              <!-- <li><a href="">목/허리통증</a></li>
+              <li><a href="">무릎통증</a></li>
+              <li><a href="">어깨통증</a></li>
+              <li><a href="">팔/팔(손)목 통증</a></li>
+              <li><a href="">발/발목 통증</a></li>
+              <li><a href="">턱관절 및 안면비대칭</a></li> -->
+            </ul>
+          </li>
+          <li>
+            <a href="#" class="unlink-mo" data-link="/oriental-01">여성클리닉
+              <span class="icon_wrap visible-xs">
+                <img src="/img/common/close_one.svg" alt="" class="close_one">
+                <img src="/img/common/open_one.svg" alt="" class="open_one">
+              </span>
+            </a>
+            <ul class="depth02">
+              <!-- <li><a href="/oriental-01">담적질환</a></li>
+              <li><a href="/oriental-02">신경성질환</a></li>
+              <li><a href="/oriental-03">자가면역질환</a></li>
+              <li><a href="/oriental-04">과민성대장증후군</a></li> -->
+            </ul>
+          </li>
+          <li>
+            <a href="#" class="unlink-mo" data-link="">내과클리닉
+              <span class="icon_wrap visible-xs">
+                <img src="/img/common/close_one.svg" alt="" class="close_one">
+                <img src="/img/common/open_one.svg" alt="" class="open_one">
+              </span>
+            </a>
+            <ul class="depth02">
+              <!-- <li><a href="">부인과질환</a></li>
+              <li><a href="">배뇨장애</a></li>
+              <li><a href="">갱년기장애</a></li>
+              <li><a href="">소아성장</a></li>
+              <li><a href="">소아면역 및 피부</a></li> -->
+            </ul>
+          </li>
+          <li>
+            <a href="#" class="unlink-mo" data-link="/car-01">우리아이건강클리닉
+              <span class="icon_wrap visible-xs">
+                <img src="/img/common/close_one.svg" alt="" class="close_one">
+                <img src="/img/common/open_one.svg" alt="" class="open_one">
+              </span>
+            </a>
+            <ul class="depth02">
+              <!-- <li><a href="/car-01">교통사고후유증치료</a></li>
+              <li><a href="#">기능의학</a></li>
+              <li><a href="#">금연</a></li>
+              <li><a href="#">비만</a></li>
+              <li><a href="#">탈모</a></li> -->
+            </ul>
+          </li>
+          <li>
+            <a href="#" class="unlink-mo" data-link="#">건강검진센터
+              <span class="icon_wrap visible-xs">
+                <img src="/img/common/close_one.svg" alt="" class="close_one">
+                <img src="/img/common/open_one.svg" alt="" class="open_one">
+              </span>
+            </a>
+            <ul class="depth02">
+              <!-- <li><a href="#">의료진소개</a></li>
+              <li><a href="#">진료시간/오시는길</a></li>
+              <li><a href="#">둘러보기</a></li>
+              <li><a href="" target="_blank">병원소식</a></li>
+              <li><a href="" target="_blank">비급여안내</a></li> -->
+            </ul>
+          </li>
+          <li>
+            <a href="#" class="unlink-mo" data-link="#">산후조리원
+              <span class="icon_wrap visible-xs">
+                <img src="/img/common/close_one.svg" alt="" class="close_one">
+                <img src="/img/common/open_one.svg" alt="" class="open_one">
+              </span>
+            </a>
+            <ul class="depth02">
+              <!-- <li><a href="#">의료진소개</a></li>
+              <li><a href="#">진료시간/오시는길</a></li>
+              <li><a href="#">둘러보기</a></li>
+              <li><a href="" target="_blank">병원소식</a></li>
+              <li><a href="" target="_blank">비급여안내</a></li> -->
+            </ul>
+          </li>
+          <li>
+            <a href="#" class="unlink-mo" data-link="#">에스테틱
+              <span class="icon_wrap visible-xs">
+                <img src="/img/common/close_one.svg" alt="" class="close_one">
+                <img src="/img/common/open_one.svg" alt="" class="open_one">
+              </span>
+            </a>
+            <ul class="depth02">
+              <!-- <li><a href="#">의료진소개</a></li>
+              <li><a href="#">진료시간/오시는길</a></li>
+              <li><a href="#">둘러보기</a></li>
+              <li><a href="" target="_blank">병원소식</a></li>
+              <li><a href="" target="_blank">비급여안내</a></li> -->
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <div class="nav_bg"></div>
+      <div class="gnb_all_btn visible-xs">
+        <a href="#">
+          <img src="/img/common/gnb_btn.svg" alt="">
+        </a>
+      </div>
+    </div>
+  </div>
+  <!-- HEADER E -->
+  <script>
+    $('.nav').on('mouseenter', function(){
+      if ($(window).width() > 768){
+        $(this).addClass('on');
+        $('.nav_bg').stop().slideDown(350);
+      }
+      });
+    $('.header').on('mouseleave', function(){
+      $('.nav').removeClass('on');
+      $('.nav_bg').stop().slideUp(350);
+    });
+    $('.gnb_all_btn').on('click', function(e){
+      e.preventDefault();
+      $('.nav').toggleClass('active');
+      if ($('.nav').hasClass('active')){
+        $('html, body').css({'overflow':'hidden'});
+      } else{
+        $('html, body').css({'overflow':'visible'});
+      }
+    });
+
+    $(window).resize(function(){
+      if ( $(window).width() < 1281 ){
+        $('.unlink-mo').attr('href','#');
+      } else {
+        $('.unlink-mo').each(function(){
+          var originurl = $(this).attr('data-link');
+          $(this).attr('href',originurl);
+        })
+      }
+    }).resize();
+
+    $('.depth01 > li > a').on('click', function(e){
+      if ( $(this).attr('href') == "#"){
+        e.preventDefault();
+        $(this).parent().siblings().find('.depth02').stop().slideUp();
+        $(this).siblings().stop().slideDown();
+        $(this).toggleClass('pop').parent().siblings().children().removeClass('pop');
+      }
+    });
+    $('.depth02 a').on('click', function(){
+      $('.nav').removeClass('active');
+    });
+
+
+  </script>
+
+  <!-- 퀵메뉴 -->
+  <div class="side_quick_menu">
+    <ul class="menu_wrap">
+      <li><a href="" class="quick_anchor"><div class="img_wrap"><img src="/img/common/quick/01.svg" alt=""></div></a></li>
+      <li><a href="" class="quick_anchor"><div class="img_wrap"><img src="/img/common/quick/02.svg" alt=""></div></a></li>
+      <li><a href="" class="quick_anchor"><div class="img_wrap"><img src="/img/common/quick/03.svg" alt=""></div></a></li>
+      <li><a href="" class="quick_anchor"><div class="img_wrap"><img src="/img/common/quick/04.svg" alt=""></div></a></li>
+    </ul>
+    <div class="btn_wrap">
+      <div class="img_wrap">
+        <img src="/img/common/quick/menu.svg" alt="" class="open_one">
+        <img src="/img/common/quick/x.svg" alt="" class="close_one">
+      </div>
+      <p class="open_one">Quick</p>
+    </div>
+  </div>
+  <script>
+    $('.btn_wrap').on('click', function(e){
+      e.preventDefault();
+      $('.menu_wrap').toggleClass('active');
+      $('.btn_wrap').toggleClass('active');
+    });
+  </script>
+
+  <div class="" id="sub_sections">
+
+    <!-- 서브탑 -->
+    <section class="new_subtop">
+      <div class="txt_con">
+        <p class="subtop_en en wbk">Well-high Women&children hospital</p>
+        <h3 class="title_text">하이푸</h3>
+        <p class="subtop_ex wbk">수술없는 자궁근종/자궁선근증 치료</p>
+      </div>
+      <img src="/img/sub/subtop/subtop_01.jpg" alt="" class="bg_img">
+    </section>
+
+    <!-- 빈section -->
+    <section class="empty"></section>
+
+    <!-- bg shadow를 위한 div -->
+    <div class="container bgshadow">
+
+      <!-- 빵쪼각 -->
+      <section class="breadcrumb_wrap">
+        <ul class="breadcrumb flex gap20 aic">
+          <li class="icon_wrap"><img src="/img/common/Home.svg" alt=""></li>
+          <li class="gray">·</li>
+          <li class="gray">하이푸클리닉</li>
+          <li class="gray">·</li>
+          <li class="darkgray">하이푸</li>
+        </ul>
+      </section>
+
+      <!-- 본문내용 se01 -->
+      <section class="se01 pt100 sec_style">
+        <div class="container-1100">
+          <h3 class="section_title">하이푸</h3>
+          <p class="mt30">
+            하이푸란 High Intensity Focused Therapy System의 약자입니다.
+            하이푸는 열치료법의 하나로 분류할 수 있으며, 
+            기본원리는 돋보기와 비슷합니다. 돋보기로 햇빛을 한점에 모으면 빛이 모인 초점 부위의 온도가 상승하는 것처럼 
+            <span class="strong">하이푸 초음파로 목표하는 표적에 열을 발생시키면 종양세포를 태워 파괴</span>할 수가 있습니다.
+          </p>
+          <ul class="boxes flex">
+            <li>無절개</li>
+            <li>無마취</li>
+            <li>無흉터</li>
+            <li>無출혈</li>
+          </ul>
+          <p>하이푸는 인체에 무해한 고강도 초음파 에너지 (65~100˚C)를 체외에서 조사하여 타겟팅한 병변조직만을 태워 없애는 비수술 치료방법입니다.</p>
+        </div>
+      </section>
+
+      <!-- 본문내용 se02 -->
+      <section class="se02 mt100 sec_style">
+        <div class="container-1100">
+          <p class="en tac">POINT</p>
+          <h3 class="section_title tac mt30">하이푸 다중소자방식</h3>
+          <ul class="boxes flex mt50 ">
+            <li class="flex">
+              <div class="txt strong tac">특징</div>
+              <div class="con">각각 다른 6가지 초음파 발생장치를 컨트롤해 독립적인 치료가 가능합니다.</div>
+            </li>
+            <li class="flex">
+              <div class="txt strong tac">영상</div>
+              <div class="con">3D시스템으로 실시간 영상을 다각도로 분석합니다.</div>
+            </li>
+            <li class="flex">
+              <div class="txt strong tac">자세</div>
+              <div class="con">누운 채로 편안하게 시술합니다.</div>
+            </li>
+            <li class="flex">
+              <div class="txt strong tac">변환</div>
+              <div class="con">6개의 요소로 구성된 이중 초점 변환기</div>
+            </li>
+            <li class="flex">
+              <div class="txt strong tac">영상</div>
+              <div class="con">위쪽에 물주머니가 위치합니다.</div>
+            </li>
+            <li class="flex">
+              <div class="txt strong tac">자세</div>
+              <div class="con">두 종류 레이저로 정밀도를 높였습니다.</div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- 본문내용 se03 -->
+      <section class="se03 mt100 sec_style">
+        <div class="img"></div>
+        <div class="color"></div>
+        <p class="en tac">CAUSE</p>
+        <h3 class="section_title tac mt30">하이푸 원리</h3>
+        <p class="mt20 tac">정상 자궁 조직의 손상은 막고 병변 조직만을 선택적으로 제거하는 치료방법인 하이푸는 부작용이나 합병증의 가능성이 낮아 안전합니다.</p>
+        <ul class="boxes flex mo-col jcc mt30 container-1100">
+          <li></li>
+          <li></li>
+        </ul>
+      </section>
+
+      <!-- 본문내용 se02 -->
+      <section class="se02 mt100 sec_style">
+        <div class="container-1100">
+          <p class="en tac">PROCESS</p>
+          <h3 class="section_title tac mt30">웰하이 하이푸 프로세스</h3>
+          <p class="mt20 tac">수많은 경험과 노하우를 바탕으로 정상 조직의 손상을 최소화시킨 섬세한 시술로 병변을 제거합니다.</p>
+          <ul class="boxes flex jcc gap70 mt80">
+            <li>
+              <div class="txt tac"><span class="strong">Step1</span> 결과 예측 시스템</div>
+              <div class="con">하이푸 시술 전 정밀검사과정을 거쳐 시술 결과를 예측해 환자분께 제공합니다.</div>
+            </li>
+            <li>
+              <div class="txt tac"><span class="strong">Step2</span> 신의료기술인증 장비로 안전한 시술</div>
+              <div class="con">풍부한 경험과 노하우를 바탕으로 신의료기술인증 장비인 HIFU를 활용해 안전한 시술을 진행합니다.</div>
+            </li>
+            <li>
+              <div class="txt tac"><span class="strong">Step3</span> 꾸준한 사후관리</div>
+              <div class="con">시술 후 3개월마다 검진을 통해 치료 경과를 살피고 이상 여부를 판단해 재발을 방지합니다.</div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- 본문내용 se04 -->
+      <section class="se04 sec_style mt100">
+        <div class="container-1100 flex mo-col gap30">
+          <div class="title">
+            <p class="en">Q&A</p>
+            <h3 class="section_title mt40">하이푸 Q&A</h3>
+          </div>
+          <div class="section_content">
+            <div class="question">Q. 하이푸 시술 후 근종은 얼마나 줄어드나요?</div>
+            <div class="answer mt40">
+              근종의 혈관분포 정도나 위치에 따라 치료 전후 조영초음파 촬영으로 근종의 혈류차단 정도를 일차적으로 평가합니다.
+              대체로 비관류용적 80-90% 정도의 결과를 보게 되며, 3-6개월 시점까지 30-50% 정도의 용적 감소,
+              12개월시점에는 50-90% 정도의 용적 감소 효과를 볼 수 있습니다.
+            </div>
+            <div class="question mt40">Q. 하이푸 시술 시 통증은 없나요?</div>
+            <div class="answer mt40">
+              근종의 상태에 따라 느끼는 통증에는 차이가 있을 수 있으며, 대체로 하복부의 뻐근함, 
+              조여드는 느낌이 있을 수 있고, 이를 조절하기 위하여 의식을 유지한 정도로 진정상태를 
+              유지하게 됩니다. 이러한 도움으로 큰 어려움 없이 시술 받으실 수 있습니다.
+            </div>
+            <div class="question mt40">Q. 하이푸 시술방법과 시간이 궁금해요.</div>
+            <div class="answer mt40">
+              웰하이 하이푸는 환자분이 편하게 누운 상태로 의료진과 대화하며 시술을 진행하기 때문에
+              이상증상과 불편함을 바로 전달 받을 수 있어 안전성이 높으며 약 30분-1시간 정도 소요됩니다.
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 본문내용 se05 -->
+      <section class="se05 mt100 sec_style">
+        <div class="container-1100 flex mo-col gap30">
+          <div class="title">
+            <p class="en">NOTICE</p>
+            <h3 class="section_title mt40">하이푸 시술 후 <br class="hidden-xs"> 주의사항</h3>
+          </div>
+          <div class="section_content">
+            <ul>
+              <li>시술 후 음주 및 흡연은 출혈/염증의 위험이 있을 수 있으니 1-2주간 삼가주세요.</li>
+              <li>시술 후 무리한 운동 또는 찜질방/탕목욕 등 열감 있는 행위는 1주간 삼가주세요.</li>
+              <li>시술 후 출혈/통증 등의 부작용이 발생할 경우 반드시 병원으로 내원하시길 바랍니다.</li>
+              <li>개인 정도에 따라 차이가 있을 수 있으니 주의하시길 바랍니다.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+    </div>
+    <!-- bgshadow box end -->
+
+    <!-- 서브하단공통 슬라이드 -->
+    <section class="sub_common section">
+      <div class="container-1200">
+        <div class="swiper img_slide">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="/img/sub/subcommon/01.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="/img/sub/subcommon/02.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="/img/sub/subcommon/03.jpg" alt="">
+            </div>
+          </div>
+        </div>
+        <div class=" txt_slide">
+          <div class="swiper con">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="swiper-counter">
+                  <p class="current">Special 01</p>
+                  <div class="progress"></div>
+                  <p class="next">Special 02</p>
+                </div>
+                <p class="strong mt50 wbk">산부인과 전문의의 <span class="purple"> 1:1 맞춤진료</span></p>
+                <p class="mt30 wbk">의료진이 개인별 1:1 맞춤상담 및 시술을 진행합니다.
+                  시술을 필요로 하는 부위의 상태를 정확히 파악하고
+                  그에 알맞은 치료 계획을 세워 시술 만족도를 높입니다.</p>
+              </div>
+              <div class="swiper-slide">
+                <p class="strong mt50 wbk">끊임없는 연구와 <br class="hidden-xs"> <span class="purple">다양한 케이스의 임상경험</span></p>
+                <p class="mt30 wbk">의사, 전 직원의 끊임없는 연구와 다양한 케이스의
+                  임상경험을 통해 올바른 진료를 도와드리니다.</p>
+              </div>
+              <div class="swiper-slide">
+                <p class="strong mt50 wbk">안전하고 성능이 우수한 <br class="hidden-xs"> <span class="purple">의료장비 도입</span></p>
+                <p class="mt30 wbk">안전하고 성능이 우수한 의료장비를 준비하여
+                  안심하고 진료 받으실 수 있습니다.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="pagination tac"></div>
+      </div>
+      <div class="navigation container">
+        <div class="btn btn_prev"><img src="/img/sub/subcommon/btn_prev.svg" alt=""></div>
+        <div class="btn btn_next"><img src="/img/sub/subcommon/btn_next.svg" alt=""></div>
+      </div>
+    </section>
+    <script>
+        var img_slide = new Swiper(".img_slide", {
+            // effect: "fade",
+            // loop: true,
+            speed:2500,
+            autoplay:{
+              delay:2500,
+              disableOnInteraction: false,
+            },
+            pagination: {
+            el: ".pagination",
+          },
+          navigation: {
+            nextEl: ".navigation .btn_next",
+            prevEl: ".navigation .btn_prev",
+          },
+          });
+
+        var con = new Swiper(".con", {
+          spaceBetween: 20,
+          // direction : 'vertical',
+          effect : 'fade',
+          fadeEffect: {
+            crossFade: true,
+            delay: 0,
+            speed: 0,
+          },
+        });
+
+        img_slide.controller.control = con;
+        con.controller.control = img_slide;
+    </script>
+
+  </div>
+
+
+
+
+  <!-- 푸터 시작 -->
+  <div id="footer">
+    <div class="footer">
+      <div class="w-1400 flex_box">
+        <div class="box01">
+          <ul>
+            <li>
+              <a href="" class="h5-b purple">개인정보 취급방침</a>
+            </li>
+            <li>
+              <a href="" class="h5">이용약관</a>
+            </li>
+            <li>
+              <a href="" class="h5">환자의 권리와 의무</a>
+            </li>
+            <li>
+              <a href="" class="h5">비급여안내</a>
+            </li>
+            <li>
+              <a href="" class="h5">사이트맵</a>
+            </li>
+            <li>
+              <a href="" class="h5">관리자</a>
+            </li>
+          </ul>
+          <div class="con">
+            <p class="h5">부산광역시 강서구 명지동 3240-5번지(명지오션시티)</p>
+            <p>
+              <span class="h5 pr-20"><b class="h5-b">사업자등록번호</b>165-91-00571</span>
+              <span class="h5 pr-20"><b class="h5-b">대표원장</b>김동영</span>
+              <span class="h5 pr-20 wbk"><b class="h5-b">개인정보관리책임자</b>김동영</span>
+            
+              <span class="h5 pr-20 wbk"><b class="h5-b wbk">대표번호</b>051-201-8854 </span>
+              <span class="h5 pr-20 wbk"><b class="h5-b wbk">산후조리원</b>051-204-5282</span>
+              <span class="h5 wbk"><b class="h5-b wbk">팩스번호</b>051-201-6236</span>
+            </p>
+          </div>
+          <p class="h5 copyright">COPYRIGHT ⓒ 2022WELLHIGH WOMEN'S HOSPITAL RESERVED.</p>
+        </div>
+        <div class="box02">
+          <div class="img_wrap">
+            <img src="/img/main/logo_color.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- 푸터 끝 -->
+
+
+</body>
+</html>
+
+
+
+
+

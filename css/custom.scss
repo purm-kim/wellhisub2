@@ -1,0 +1,273 @@
+@import "_mixins.scss";
+
+// preset
+@mixin pos_center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+// CONTAINER MIXINS
+@mixin container($w, $mw) {
+  width: $w;
+  max-width: $mw;
+  margin: 0 auto;
+}
+@mixin container_full {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+}
+@mixin overlay($color, $degree) {
+  position: relative;
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: $color;
+    opacity: $degree;
+  }
+}
+// 게시판 Custom
+// Basic_view
+.boardTable {
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    border-top: 2rem solid #333;
+    th {
+      width: 10%;
+      background: #fafafa;
+      @include mq(mobile) {
+        width: auto;
+      }
+    }
+    th,
+    td {
+      padding: 15rem;
+      border-bottom: 1rem solid #eee;
+      @include mq(mobile) {
+        padding: 10rem;
+      }
+    }
+  }
+}
+// Basic_list
+.tbl_wrap table {
+  border-collapse: collapse;
+  border-top: 2rem solid #333;
+}
+.tbl_head01 tbody td {
+  padding: 4rem;
+}
+.tbl_head01 td {
+  height: auto;
+  padding: 20rem 5rem;
+}
+// 공지 아이콘
+.bo_notice .notice_icon {
+  display: inline-block;
+  border-radius: 5px;
+  padding: 3px 5px;
+  background: #333;
+  color: #fff;
+}
+// 새글 아이콘
+#bo_list .bo_tit .new_icon {
+  color: #fff;
+  background: #333;
+}
+// 로그인
+#mb_login {
+  box-shadow: 0 0 10rem rgba(0, 0, 0, 0.15);
+  font-size: 18rem;
+  &.mbskin {
+    width: 400rem;
+    margin: 25vh auto;
+    .mbskin_box {
+      border: none;
+    }
+  }
+  legend {
+    display: none;
+  }
+}
+.register {
+  @include container(1100rem, 90%);
+  margin: 200rem auto;
+}
+#login_fs {
+  padding: 40rem 20rem;
+}
+
+// 관리자페이지 헤더
+#hd_top {
+  background: #333;
+  height: 50rem;
+  #btn_gnb {
+    background: url(../../adm/img/menu-cl.png) 50% 50% no-repeat #333;
+    width: 50rem;
+    height: 50rem;
+  }
+  #logo {
+    background: #333;
+  }
+  .tnb_shop {
+    display: none;
+  }
+  #tnb {
+    .tnb_service {
+      background: #000;
+    }
+    button {
+      background: #000;
+      span {
+        background: url(../../adm/img/op_btn.png) 50% 50% no-repeat #000;
+      }
+    }
+  }
+}
+#gnb .gnb_oparea li a:hover,
+#gnb .gnb_oparea li .on {
+  color: #000;
+  position: relative;
+  &::after {
+    content: "·";
+    position: absolute;
+    left: -6rem;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+#bo_v_atc {
+  padding: 40rem 20rem;
+}
+
+#bo_list,
+#bo_gall,
+#bo_w,
+#bo_v {
+  width: 1300rem;
+  max-width: 90%;
+  margin: 100rem auto;
+}
+.h2_frm{
+  color: #131313;
+}
+.btn_submit,.btn_list03 a,.btn_01, a.btn_01,a.btn_frmline{
+  background:#c1c1c1;
+  &:hover{
+    background:#333;
+  }
+}
+.btn_02, a.btn_02{
+  background: #555;
+}
+.btn_03, a.btn_03{
+  background: #333;
+}
+#login_password_lost{
+  color:#333;
+}
+.tbl_head01 thead th{
+  background: #e3e3e3;
+  border:1rem solid #ccc;
+}
+a.btn_admin, .btn_admin{
+  color:#000;
+}
+#bo_list tbody tr:hover{
+  border-left: 2rem solid #000;
+}
+// 테마메뉴 숨김
+li[data-menu="100280"]{
+  display: none;
+}
+
+#ctt{
+  width: 1300rem;
+  margin:100rem auto;
+  max-width: 90%;
+}
+
+// 게시판 서브탑 공통
+.bbs_subtop {
+  margin-top: 100rem;
+  position: relative;
+  .img_wrap{
+    height: 400rem;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      // object-position: center left 10rem;
+    }
+    margin-bottom: 100rem;
+  }
+  .inTitle{
+    position: absolute;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%, -50%);
+    h2.title{
+      color:#555;
+    }
+  }
+    h2.title{
+      text-align: center;
+      font-size: 40rem;
+    }
+}
+
+#fregister p{
+  background: var(--pri-02);
+  &::before{
+    background: var(--pri-01);
+  }
+}
+#bo_cate a{
+  border: 1px solid var(--pri-02);
+  color: var(--pri-01);
+}
+#bo_cate #bo_cate_on{
+  background: var(--pri-02);
+  border: 1px solid var(--pri-01);
+  box-shadow: inset 0 2rem 5rem var(--pri-02);
+}
+.bo_cate_link{
+  background: #eee; 
+  color: var(--pri-01);
+}
+#bo_cate a:focus, #bo_cate a:hover, #bo_cate a:active{
+  background: var(--pri-01);
+}
+
+// 게시판 제목 모바일에서 말줄임표로 표시하기
+.bo_notice td{
+  background-color: #f6f6f6;
+  &:nth-child(2n){
+    background-color: #fff;
+  }
+  a{
+    @include mq(mobile){
+      overflow: hidden;
+      display: inline-block;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      width: 80%;
+    }
+  }
+}
+.bo_tit{
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+.td_subject{
+  padding-left: 10rem !important;
+}

@@ -1,0 +1,289 @@
+@charset "UTF-8";
+.boardTable table {
+  width: 100%;
+  border-collapse: collapse;
+  border-top: 2rem solid #333;
+}
+
+.boardTable table th {
+  width: 10%;
+  background: #fafafa;
+}
+
+@media (max-width: 768px) {
+  .boardTable table th {
+    width: auto;
+  }
+}
+
+.boardTable table th,
+.boardTable table td {
+  padding: 15rem;
+  border-bottom: 1rem solid #eee;
+}
+
+@media (max-width: 768px) {
+  .boardTable table th,
+  .boardTable table td {
+    padding: 10rem;
+  }
+}
+
+.tbl_wrap table {
+  border-collapse: collapse;
+  border-top: 2rem solid #333;
+}
+
+.tbl_head01 tbody td {
+  padding: 4rem;
+}
+
+.tbl_head01 td {
+  height: auto;
+  padding: 20rem 5rem;
+}
+
+.bo_notice .notice_icon {
+  display: inline-block;
+  border-radius: 5px;
+  padding: 3px 5px;
+  background: #333;
+  color: #fff;
+}
+
+#bo_list .bo_tit .new_icon {
+  color: #fff;
+  background: #333;
+}
+
+#mb_login {
+  -webkit-box-shadow: 0 0 10rem rgba(0, 0, 0, 0.15);
+          box-shadow: 0 0 10rem rgba(0, 0, 0, 0.15);
+  font-size: 18rem;
+}
+
+#mb_login.mbskin {
+  width: 400rem;
+  margin: 25vh auto;
+}
+
+#mb_login.mbskin .mbskin_box {
+  border: none;
+}
+
+#mb_login legend {
+  display: none;
+}
+
+.register {
+  width: 1100rem;
+  max-width: 90%;
+  margin: 0 auto;
+  margin: 200rem auto;
+}
+
+#login_fs {
+  padding: 40rem 20rem;
+}
+
+#hd_top {
+  background: #333;
+  height: 50rem;
+}
+
+#hd_top #btn_gnb {
+  background: url(../../adm/img/menu-cl.png) 50% 50% no-repeat #333;
+  width: 50rem;
+  height: 50rem;
+}
+
+#hd_top #logo {
+  background: #333;
+}
+
+#hd_top .tnb_shop {
+  display: none;
+}
+
+#hd_top #tnb .tnb_service {
+  background: #000;
+}
+
+#hd_top #tnb button {
+  background: #000;
+}
+
+#hd_top #tnb button span {
+  background: url(../../adm/img/op_btn.png) 50% 50% no-repeat #000;
+}
+
+#gnb .gnb_oparea li a:hover,
+#gnb .gnb_oparea li .on {
+  color: #000;
+  position: relative;
+}
+
+#gnb .gnb_oparea li a:hover::after,
+#gnb .gnb_oparea li .on::after {
+  content: "·";
+  position: absolute;
+  left: -6rem;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+#bo_v_atc {
+  padding: 40rem 20rem;
+}
+
+#bo_list,
+#bo_gall,
+#bo_w,
+#bo_v {
+  width: 1300rem;
+  max-width: 90%;
+  margin: 100rem auto;
+}
+
+.h2_frm {
+  color: #131313;
+}
+
+.btn_submit, .btn_list03 a, .btn_01, a.btn_01, a.btn_frmline {
+  background: #c1c1c1;
+}
+
+.btn_submit:hover, .btn_list03 a:hover, .btn_01:hover, a.btn_01:hover, a.btn_frmline:hover {
+  background: #333;
+}
+
+.btn_02, a.btn_02 {
+  background: #555;
+}
+
+.btn_03, a.btn_03 {
+  background: #333;
+}
+
+#login_password_lost {
+  color: #333;
+}
+
+.tbl_head01 thead th {
+  background: #e3e3e3;
+  border: 1rem solid #ccc;
+}
+
+a.btn_admin, .btn_admin {
+  color: #000;
+}
+
+#bo_list tbody tr:hover {
+  border-left: 2rem solid #000;
+}
+
+li[data-menu="100280"] {
+  display: none;
+}
+
+#ctt {
+  width: 1300rem;
+  margin: 100rem auto;
+  max-width: 90%;
+}
+
+.bbs_subtop {
+  margin-top: 100rem;
+  position: relative;
+}
+
+.bbs_subtop .img_wrap {
+  height: 400rem;
+  margin-bottom: 100rem;
+}
+
+.bbs_subtop .img_wrap img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.bbs_subtop .inTitle {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.bbs_subtop .inTitle h2.title {
+  color: #555;
+}
+
+.bbs_subtop h2.title {
+  text-align: center;
+  font-size: 40rem;
+}
+
+#fregister p {
+  background: var(--pri-02);
+}
+
+#fregister p::before {
+  background: var(--pri-01);
+}
+
+#bo_cate a {
+  border: 1px solid var(--pri-02);
+  color: var(--pri-01);
+}
+
+#bo_cate #bo_cate_on {
+  background: var(--pri-02);
+  border: 1px solid var(--pri-01);
+  -webkit-box-shadow: inset 0 2rem 5rem var(--pri-02);
+          box-shadow: inset 0 2rem 5rem var(--pri-02);
+}
+
+.bo_cate_link {
+  background: #eee;
+  color: var(--pri-01);
+}
+
+#bo_cate a:focus, #bo_cate a:hover, #bo_cate a:active {
+  background: var(--pri-01);
+}
+
+.bo_notice td {
+  background-color: #f6f6f6;
+}
+
+.bo_notice td:nth-child(2n) {
+  background-color: #fff;
+}
+
+@media (max-width: 768px) {
+  .bo_notice td a {
+    overflow: hidden;
+    display: inline-block;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 80%;
+  }
+}
+
+.bo_tit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+
+.td_subject {
+  padding-left: 10rem !important;
+}
