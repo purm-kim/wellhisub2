@@ -2155,8 +2155,8 @@ html .ui-button.ui-state-disabled:active{
 //new substyle
 
 #sub_sections{
-  background: linear-gradient(to bottom, #ffdfa1, #944696);
-  opacity: 0.2;
+  background: linear-gradient(to bottom, rgba(255,223,161,0.2), rgba(148,70,150,0.2));
+  // opacity: 0.2;
   z-index: -1;
 }
 
