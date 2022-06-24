@@ -7,21 +7,21 @@ $(function () {
   }
 
   var fadeStart = 100,
-    fadeUntil = 600,
+    fadeUntil = 1200,
     fading = $('.new_subtop');
 
   if ($(window).width() < 769) {
     fadeStart = 200;
-    fadeUntil = 600;
+    fadeUntil = 800;
   }
 
   $(window).resize(function () {
     if ($(window).width() < 769) {
       fadeStart = 200;
-      fadeUntil = 600;
+      fadeUntil = 800;
     } else {
       fadeStart = 200;
-      fadeUntil = 800;
+      fadeUntil = 1200;
     }
   });
 
