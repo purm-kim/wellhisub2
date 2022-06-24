@@ -399,42 +399,58 @@
     </div>
     <!-- bgshadow box end -->
 
-    <!-- 서브하단공통 슬라이드 -->
-    <section class="sub_common section">
-      <div class="container-1200">
-        <div class="swiper img_slide">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <img src="/img/sub/subcommon/01.jpg" alt="">
-            </div>
-            <div class="swiper-slide">
-              <img src="/img/sub/subcommon/02.jpg" alt="">
-            </div>
-            <div class="swiper-slide">
-              <img src="/img/sub/subcommon/03.jpg" alt="">
-            </div>
+  <!-- 서브하단공통 슬라이드 -->
+  <section class="sub_common section">
+    <div class="container-1200">
+      <div class="swiper img_slide">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="/img/sub/subcommon/01.jpg" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="/img/sub/subcommon/02.jpg" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="/img/sub/subcommon/03.jpg" alt="">
           </div>
         </div>
-        <div class=" txt_slide">
-          <div class="swiper con">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <div class="swiper-counter">
-                  <p class="current">Special 01</p>
-                  <div class="progress"></div>
-                  <p class="next">Special 02</p>
-                </div>
+      </div>
+      <div class=" txt_slide">
+        <div class="swiper con">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="swiper-counter flex">
+                <p class="current en">Special 01</p>
+                <div class="progress"><span></span></div>
+                <p class="next en">Special 02</p>
+              </div>
+              <div class="box">
                 <p class="strong mt50 wbk">산부인과 전문의의 <span class="purple"> 1:1 맞춤진료</span></p>
                 <p class="mt30 wbk">의료진이 개인별 1:1 맞춤상담 및 시술을 진행합니다.
                   시술을 필요로 하는 부위의 상태를 정확히 파악하고
                   그에 알맞은 치료 계획을 세워 시술 만족도를 높입니다.</p>
               </div>
-              <div class="swiper-slide">
+              
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper-counter flex">
+                <p class="current en">Special 02</p>
+                <div class="progress"><span></span></div>
+                <p class="next en">Special 03</p>
+              </div>
+              <div class="box">
                 <p class="strong mt50 wbk">끊임없는 연구와 <br class="hidden-xs"> <span class="purple">다양한 케이스의 임상경험</span></p>
                 <p class="mt30 wbk">의사, 전 직원의 끊임없는 연구와 다양한 케이스의
                   임상경험을 통해 올바른 진료를 도와드리니다.</p>
               </div>
-              <div class="swiper-slide">
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper-counter flex">
+                <p class="current en">Special 03</p>
+                <div class="progress"><span></span></div>
+                <p class="next en">Special 01</p>
+              </div>
+              <div class="box">
                 <p class="strong mt50 wbk">안전하고 성능이 우수한 <br class="hidden-xs"> <span class="purple">의료장비 도입</span></p>
                 <p class="mt30 wbk">안전하고 성능이 우수한 의료장비를 준비하여
                   안심하고 진료 받으실 수 있습니다.</p>
@@ -442,46 +458,47 @@
             </div>
           </div>
         </div>
-        
-        <div class="pagination tac"></div>
       </div>
-      <div class="navigation container">
-        <div class="btn btn_prev"><img src="/img/sub/subcommon/btn_prev.svg" alt=""></div>
-        <div class="btn btn_next"><img src="/img/sub/subcommon/btn_next.svg" alt=""></div>
-      </div>
-    </section>
-    <script>
-        var img_slide = new Swiper(".img_slide", {
-            // effect: "fade",
-            // loop: true,
-            speed:2500,
-            autoplay:{
-              delay:2500,
-              disableOnInteraction: false,
-            },
-            pagination: {
-            el: ".pagination",
+      
+      <div class="pagination tac"></div>
+    </div>
+    <div class="navigation container">
+      <div class="btn btn_prev"><img src="/img/sub/subcommon/btn_prev.svg" alt=""></div>
+      <div class="btn btn_next"><img src="/img/sub/subcommon/btn_next.svg" alt=""></div>
+    </div>
+  </section>
+  <script>
+      var img_slide = new Swiper(".img_slide", {
+          // effect: "fade",
+          // loop: true,
+          speed:2500,
+          autoplay:{
+            delay:2500,
+            disableOnInteraction: false,
           },
-          navigation: {
-            nextEl: ".navigation .btn_next",
-            prevEl: ".navigation .btn_prev",
-          },
-          });
-
-        var con = new Swiper(".con", {
-          spaceBetween: 20,
-          // direction : 'vertical',
-          effect : 'fade',
-          fadeEffect: {
-            crossFade: true,
-            delay: 0,
-            speed: 0,
-          },
+          pagination: {
+          el: ".pagination",
+        },
+        navigation: {
+          nextEl: ".navigation .btn_next",
+          prevEl: ".navigation .btn_prev",
+        },
         });
 
-        img_slide.controller.control = con;
-        con.controller.control = img_slide;
-    </script>
+      var con = new Swiper(".con", {
+        spaceBetween: 20,
+        // direction : 'vertical',
+        effect : 'fade',
+        fadeEffect: {
+          crossFade: true,
+          delay: 0,
+          speed: 0,
+        },
+      });
+
+      img_slide.controller.control = con;
+      con.controller.control = img_slide;
+  </script>
 
   </div>
 

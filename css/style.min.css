@@ -3243,13 +3243,11 @@ html .ui-button.ui-state-disabled:active {
 }
 
 .sub_common .container-1200 .txt_slide .swiper-slide {
-  padding: 120rem 40rem;
+  padding: 100rem 40rem;
   opacity: 0;
   width: 100%;
   height: 100%;
   background-color: #fff;
-  -webkit-transition: all ease 0.6s;
-  transition: all ease 0.6s;
 }
 
 @media (max-width: 768px) {
@@ -3258,13 +3256,49 @@ html .ui-button.ui-state-disabled:active {
   }
 }
 
+.sub_common .container-1200 .txt_slide .swiper-slide .swiper-counter {
+  gap: 10rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sub_common .container-1200 .txt_slide .swiper-slide .swiper-counter .current {
+  font-size: 22rem;
+  font-weight: 700;
+  background: -webkit-gradient(linear, left top, right top, from(#FFBD3E), to(#6C1F7E));
+  background: linear-gradient(to right, #FFBD3E, #6C1F7E);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.sub_common .container-1200 .txt_slide .swiper-slide .swiper-counter .progress {
+  width: 80rem;
+  height: 2rem;
+}
+
+.sub_common .container-1200 .txt_slide .swiper-slide .swiper-counter .progress span {
+  display: block;
+  width: 1rem;
+  height: 1rem;
+  background-color: #000;
+  -webkit-transition: all 6s;
+  transition: all 6s;
+}
+
+.sub_common .container-1200 .txt_slide .swiper-slide .swiper-counter .next {
+  font-size: 16rem;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.2);
+}
+
 .sub_common .container-1200 .txt_slide .swiper-slide .strong {
   font-size: 32rem;
   font-weight: 600;
   line-height: 1.2;
 }
 
-.sub_common .container-1200 .txt_slide .swiper-slide p {
+.sub_common .container-1200 .txt_slide .swiper-slide .box {
   font-size: 18rem;
   -webkit-transition: all ease 0.6s;
   transition: all ease 0.6s;
@@ -3278,9 +3312,13 @@ html .ui-button.ui-state-disabled:active {
   opacity: 1;
 }
 
-.sub_common .container-1200 .txt_slide .swiper-slide-active p {
+.sub_common .container-1200 .txt_slide .swiper-slide-active .box {
   -webkit-transform: translateY(-40rem);
           transform: translateY(-40rem);
+}
+
+.sub_common .container-1200 .txt_slide .swiper-slide-active .swiper-counter .progress span {
+  width: 80rem;
 }
 
 .sub_common .container-1200 .pagination {
